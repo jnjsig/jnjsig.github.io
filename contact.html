@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <head>
+      <title>JNJS</title>
+  <link rel="icon" type="image/x-icon" href="jnjs.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <style>
+    .contactimage{
+      width: 30%;
+      height: 19%;
+    }
+    .mapsize {
+      height: 30%;
+      width: 30%;
+    }
+    @media screen and (max-width: 600px) {
+      .mapsize{
+        height: 25%;
+        width: 100%;
+      }
+      .contactimage{
+        width: 70%;
+        height: 25%;
+      }
+    }
+  </style>
+  </head>
+  <body>
+  <div class="fixtheposition">
+  <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active"><img src="logo.png" class="navbar_logo"></a>
+      <a style="text-decoration: no; font-family: monospace;" href="https://www.google.com/">Google <img src="google.png" class="navbar_icons"></a>
+      <div class="dropdown">
+        <button class="dropbtn" style="font-family: monospace;">Languages <img src="language.png" class="navbar_icons">
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+                  <a href="english.html" style="font-family: monospace;">English<img src="english.png" class="navbar_flag"></a>
+                  <a href="español.html" style="font-family: monospace;">Español<img src="spanish.png" class="navbar_flag"></a>
+                  <a href="deutsch.html" style="font-family: monospace;">Deutsch<img src="german.png" class="navbar_flag"></a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" style="font-family: monospace;">Find a job<img src="job.png" height="30" width="30">
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a style="text-decoration: none; font-family: monospace;" href="https://es.indeed.com/">Indeed <img src="indeed.png" class="navbar_icons"></a>
+          <a style="text-decoration: none; font-family: monospace;" href="https://web.jobtoday.com/">Job Today <img src="jobtoday.png" class="navbar_icons"></a>
+          <a style="text-decoration: none; font-family: monospace;" href="https://www.turijobs.com/">Turijobs <img src="turijobs.jpg" class="navbar_icons"></a>
+          <a style="text-decoration: none; font-family: monospace;" href="https://www.milanuncios.com/">Milanuncios <img src="milanuncios.png" class="navbar_icons"></a>
+          <a style="text-decoration: none; font-family: monospace;" href="https://es.linkedin.com/">LinkedIn <img src="linkedin.png" class="navbar_icons"></a>
+        </div>
+      </div>
+      <a style="text-decoration: none; font-family: monospace;" href="contact.html">Contact <img src="contact.png" height="30" width="30" class="navbaricons"></a>
+      <a style="text-decoration: none; font-family: monospace;" href="contactwithus.html">Chat With Us <img src="chat.jpg" height="30" width="30" class="navbaricons"></a>
+      <a href="javascript:void(0);" style="font-size: 25px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+  <video type="video/mp4" class="videobackground" autoPlay muted loop preLoad playsinline>
+    <source src="background.mp4">
+    <source src="Background.mp4">
+  </video>
+  <div class="centerTheThings">
+  <div class="content">
+    <br>
+    <br>
+    <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50860.986818133046!2d-3.5912717499999993!3d37.18094625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce62d32c27d%3A0x9258f79dd3600d72!2sGranada!5e0!3m2!1ses!2ses!4v1662998505474!5m2!1ses!2ses" class="mapsize" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+	</iframe>
+    <div style="font-family: Roboto; border-radius: 5px; padding: 1px 30px; width: 75%;">
+    <img src="img\contactme.jpeg" class="contactimage">
+    <form accept-charset="UTF-8" action="https://getform.io/f/827092dd-0a27-414e-a967-8963e4c8576e" method="POST" enctype="multipart/form-data" target="_blank" id="wpform">
+      <div>
+         <label style="color: white;">Full Name</label>
+         <div>
+            <input style="margin-top: 5px; background-color: #fff; height:35px; width:235px;" type="text" name="first_name" placeholder="Enter your name and surname" required="required">
+         </div>
+      </div>
+      <br>
+      <div>
+         <label style="color: white;">Email address</label>
+         <div>
+            <input style="margin-top: 5px;background-color: #fff; height:35px; width:235px;" type="email" name="email" placeholder="Enter your email address" required="required">
+         </div>
+      </div>
+      <br>
+      <div>
+         <label style="color: white;">Your Message</label>
+         <div>
+            <textarea style="margin-top: 5px;background-color: #fff; height:50px; width:235px;" type="text" name="message" placeholder="Enter your message" required="required"></textarea>
+         </div>
+      </div>
+      <div>
+         <label style="color: white;">Upload document:</label>
+         <input type="file" name="file">
+      </div>
+      <br>
+      <input type="hidden" name="utf8" value="✓">
+      <button style="font-size:14px; background-color:#6b7ddf; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
+   </form>
+</div>
+    <p style="font-size: 10; color: white;" align="right">Created by Jonathan Nathan Jonas Sigmund.</p>
+    <img src="img/copyright.png" height="35px" width="100px" align="right">
+<br>
+</div>
+</div>
+</body>
+</html>
