@@ -17,7 +17,6 @@
   justify-content: center;
 }
 .contenido_2 {
-  border: ridge grey 1px;
   place-items: center;
   display: grid;
 }
