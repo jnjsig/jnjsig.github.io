@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JNJS</title>
+<link rel="icon" type="image/x-icon" href="jnjs.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content="3; english.html">
+  <link rel="stylesheet" href="styles.css">
+	<style>
+	    body {
+	      overflow: static;
+        background-color: black;
+        overflow-y: hidden;
+      }
+	    /* Center the loader */
+        #loader {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          z-index: 2;
+          width: 120px;
+          height: 120px;
+          margin: -76px 0 0 -76px;
+          border: 10px solid silver;
+          border-radius: 50%;
+          border-top: 10px solid #ffffff;
+          -webkit-animation: spin 650ms linear infinite;
+          animation: spin 650ms linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 0.5;
+          animation-name: animatebottom;
+          animation-duration: 0.5;
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+        
+        #myDiv {
+          display: none;
+        }
+        .content_2 {
+          opacity: 0.9;
+          z-index: 1;
+          background: black;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          animation: fadeInAndOut;
+          animation-duration: 5s;
+        }
+        @keyframes fadeInAndOut {
+          0% {opacity: 1;}
+          100% {opacity: 0;}
+}
+    </style>
+</head>
+		<body onload="myFunction()" style="margin: 0;">
+    <video type='video/mp4' class='videobackground' autoPlay muted loop preLoad playsinline>
+      <source src='background.mp4'>
+      <source src='Background.mp4'>
+    </video>
+		<div id="loader"></div>
+		<div style="display:none;" id="myDiv" class="animate-bottom">
+		<div class="loader"></div>
+		</div>
+        <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 500);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "fixed";
+          document.getElementById("myDiv").style.display = "fixed";
+        }
+        </script>
+        </div>
+        <div class='content_2'>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</body>
+</html>
