@@ -100,9 +100,20 @@ iframe {
 }
 .documentButton {
   justify-content: center;
-  color: whitesmoke;
-  background-color: black;
-  border-radius: 10px;
+  color: white;
+  background-color: rgb(17, 17, 17);
+  border: ridge;
+  border-radius: 40px;
+  border-color: grey;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: monospace;
+  align-items: center;
+  display: flex;
+}
+.documentButton:hover {
+  color: white;
+  background-color: rgb(17, 17, 17);
   border-color: white;
 }
 .videobackground {
