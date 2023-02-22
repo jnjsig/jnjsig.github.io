@@ -4,11 +4,8 @@
 <title>JNJS</title>
 <link rel="icon" type="image/x-icon" href="jnjs.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body onload="myFunction()" style="margin: 0;">
-	<script>
-        window.alert('Welcome to JNJS, By using our website, you hereby consent to our Privacy Policy and agree to its terms. We use third party cookies to personalize content, ads and analyze site traffic. If you wish to read our Privacy Policy just click on the Cookies label');
-      </script>
+	<meta http-equiv="refresh" content="3; english.html">
+  <link rel="stylesheet" href="styles.css">
 	<style>
 	    body {
 	      overflow: hidden;
@@ -29,7 +26,7 @@
           border-top: 10px solid #ffffff;
           -webkit-animation: spin 650ms linear infinite;
           animation: spin 650ms linear infinite;
-	  overflow: hidden;
+          overflow: hidden;
         }
         
         @-webkit-keyframes spin {
@@ -71,14 +68,17 @@
           display: flex;
           width: 100%;
           height: 100%;
-          animation: fadeInAndOut 1s ease-in-out;
-	  overflow: hidden;
+          animation: fadeInAndOut;
+          animation-duration: 1s;
+          overflow: hidden;
         }
         @keyframes fadeInAndOut {
           0% {opacity: 1;}
           100% {opacity: 0;}
 }
     </style>
+</head>
+		<body onLoad="myFunction()" style="margin: 0;">
     <video type='video/mp4' class='videobackground' autoPlay muted loop preLoad playsinline>
       <source src='background.mp4'>
       <source src='Background.mp4'>
@@ -91,7 +91,7 @@
         var myVar;
         
         function myFunction() {
-          myVar = setTimeout(showPage, 500);
+          myVar = setTimeout(showPage, 100);
         }
         
         function showPage() {
