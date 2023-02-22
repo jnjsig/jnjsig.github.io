@@ -1,3 +1,14 @@
+@font-face {
+  font-family: personalFont1;
+  src: url(font1.otf);
+}
+.navbarText {
+  color: white;
+  font-weight: bolder;
+  font-size: 17px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
 .contenido {
   display: flex;
   justify-content: center;
@@ -75,28 +86,33 @@
 p {
   color: white;
   margin: 1px;
-  font-family: monospace;
+  font-family: sans-serif;
   text-align: center;
+  background-color: rgb(29, 29, 29);
 }
 h1 {
   color: white;
   margin: 1px;
-  font-family: monospace;
+  font-family: personalFont1;
   text-align: center;
+  border: ridge white 3px;
 }
 h3 {
   color: white;
   margin: 1px;
-  font-family: monospace;
+  font-family: sans-serif;
   text-align: center;
+  border: ridge grey 0.5px;
 }
 .profilephoto {
   border-radius: 100%;
+  border: outset white 4px;
 }
 iframe {
   display: column;
   width: 100%;
   height: 500px;
+  overflow: scroll;
 }
 .documentButton {
   justify-content: center;
@@ -107,14 +123,34 @@ iframe {
   border-color: grey;
   font-size: 15px;
   font-weight: bold;
-  font-family: monospace;
+  font-family: sans-serif;
   align-items: center;
   display: flex;
 }
 .documentButton:hover {
-  color: white;
-  background-color: rgb(17, 17, 17);
-  border-color: white;
+  animation: documentButtonHover 1s ease-in-out, documentButtonHover2 0.5s ease-in-out;
+  font-size: 0;
+  align-items: left;
+  justify-content: left;
+}
+@keyframes documentButtonHover {
+  0% {
+    align-items: right;
+    justify-content: right;
+  }
+  100% {
+    border: outset;
+    align-items: left;
+    justify-content: left;
+  }
+}
+@keyframes documentButtonHover2 {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 50px;
+  }
 }
 .videobackground {
   position: fixed;
@@ -147,7 +183,6 @@ iframe {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 /* Add an active class to highlight the current page */
 .active {
@@ -166,13 +201,11 @@ iframe {
 }
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-  font-size: 17px;
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
   margin: 0;
   display: flex;
   align-items: center;
@@ -219,12 +252,10 @@ iframe {
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
-    font-size: 17px;
   }
   .topnav a.icon {
     float: right;
     display: block;
-    font-size: 17px;
   }
   .forumchatroom {
     width: 100%;

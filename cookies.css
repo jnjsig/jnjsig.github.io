@@ -1,3 +1,17 @@
+.cookiesTitle {
+    color: black;
+    font-family: Arial;
+    border: none;
+    background: inherit;
+    font-weight: bolder;
+}
+.cookiesText {
+    color: black;
+    font-family: sans-serif;
+    margin: 0;
+    border: none;
+    background: inherit;
+}
 .cookie-consent{
     position: fixed;
     bottom: 8px;
