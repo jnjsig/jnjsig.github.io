@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="refresh" content="3; english.html">
   <link rel="stylesheet" href="styles.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<style>
 	    body {
 	      overflow: hidden;
@@ -78,7 +79,7 @@
 }
     </style>
 </head>
-<body onLoad="myFunction()" style="margin: 0;">
+<body onLoad="myFunction(), miAlerta()" style="margin: 0;">
 	<script>
    	window.alert('Welcome to JNJS, By using our website, you hereby consent to our Privacy Policy and agree to its terms. We use third party cookies to personalize content, ads and analyze site traffic. If you wish to read our Privacy Policy just click on the Cookies label.');
 	</script>
@@ -91,6 +92,14 @@
 		<div class="loader"></div>
 		</div>
         <script>
+	function miAlerta() {
+          swal({
+            title: 'COOKIES!',
+            text: 'Welcome to JNJS, By using our website, you hereby consent to our Privacy Policy and agree to its terms. We use third party cookies to personalize content, ads and analyze site traffic. If you wish to read our Privacy Policy just click on the Cookies label.',
+            icon: 'cookies.png',
+            buttons: false,
+            dangerMode: true
+          })};
         var myVar;
         
         function myFunction() {
