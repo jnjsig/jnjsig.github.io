@@ -26,6 +26,7 @@
   color: white;
   background-color: black;
   justify-content: center;
+  box-shadow: 1px 0.3px 10px gold;
 }
 .contenido_2 {
   place-items: center;
@@ -36,12 +37,14 @@
   margin: 10px;
   border: ridge grey 1px;
   align-items: center;
+  box-shadow: 1px 0.3px 10px gold;
 }
 .school { 
   display: column;
   margin: 10px;
   border: ridge grey 1px;
   align-items: center;
+  box-shadow: 1px 0.3px 10px gold;
 }
 .experience {
   display: column;
@@ -49,12 +52,14 @@
   border: ridge grey 1px;
   align-items: center;
   text-align: center;
+  box-shadow: 1px 0.3px 10px gold;
 }
 .others {
   display: column;
   margin: 10px;
   border: ridge grey 1px;
   align-items: center;
+  box-shadow: 1px 0.3px 10px gold;
 }
 .forumchatroom {
   width: 500px;
