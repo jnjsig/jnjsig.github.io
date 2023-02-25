@@ -112,6 +112,8 @@ h3 {
 .profilephoto {
   border-radius: 100%;
   border: outset white 4px;
+  box-shadow: 1px 0.3px 10px gold;
+
 }
 iframe {
   display: column;
@@ -139,7 +141,7 @@ iframe {
   display: flex;
   opacity: 1;
   text-shadow: 0px 1px 1px white;
-  box-shadow: 0px 5px 10px white;
+  box-shadow: 0px 5px 10px gold;
   margin: 7px;
 }
 .documentButton:hover {
