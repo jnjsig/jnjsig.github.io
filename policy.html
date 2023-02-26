@@ -23,6 +23,16 @@
 </style>
 </head>
 <body>
+  <div id='cursor' class="cursor"></div>
+  <script type='text/javascript'>
+    var cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', function(e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x + "px";
+        cursor.style.top = y + "px";
+    })
+  </script>
 <div class="fixtheposition">
 <div class="topnav" id="myTopnav">
     <a href="index.html" class="active"><img src="logo.png" class="navbar_logo"></a>

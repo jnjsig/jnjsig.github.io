@@ -6,9 +6,19 @@
           <title>JNJS</title>
       <link rel='icon' type='image/x-icon' href='jnjs.ico'>
       <link rel='stylesheet' href='styles.css'>
-      <script src='script.js'></script>
+      <script type='text/javascript' src='script.js'></script>
       </head>
       <body>
+      <div id='cursor' class="cursor"></div>
+        <script type='text/javascript'>
+          var cursor = document.getElementById('cursor');
+          document.addEventListener('mousemove', function(e) {
+              var x = e.clientX;
+              var y = e.clientY;
+              cursor.style.left = x + "px";
+              cursor.style.top = y + "px";
+          })
+        </script>
       <div class='fixtheposition'>
       <div class='topnav' id='myTopnav'>
           <a href='index.html' class='active'><img src='logo.png' class='navbar_logo'></a>
